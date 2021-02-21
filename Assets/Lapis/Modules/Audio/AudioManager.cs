@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Lapis.Singleton;
 
 public class AudioManager : MonoSingleton<AudioManager>
 {

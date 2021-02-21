@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Lapis.Singleton;
 
-public class CameraManager : MonoSingleton<CameraManager>
+public class CameraEffectController : MonoSingleton<CameraEffectController>
 {
     [SerializeField] private Color fadeInColor;
     [SerializeField] private Color fadeOutColor;

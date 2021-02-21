@@ -2,32 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
+namespace Lapis.Singleton
 {
-    private static T instance;
-
-    private static bool isInitialized = false;
-
-    public static T Instance
+    public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
     {
-        get
+        private static T instance;
+
+        private static bool isInitialized = false;
+
+        public static T Instance
         {
-            if (instance == null)
+            get
             {
-                instance = new GameObject($"${typeof(T)}$", typeof(T)).GetComponent<T>();
-                instance.Init();
+                if (instance == null)
+                {
+                    instance = new GameObject($"${typeof(T)}$", typeof(T)).GetComponent<T>();
+                    instance.Init();
+                }
+
+                return instance;
             }
-
-            return instance;
         }
-    }
 
-    public virtual void Init()
-    {
-        if (isInitialized)
-            return;
+        public virtual void Init()
+        {
+            if (isInitialized)
+                return;
 
-        isInitialized = true;
-        Debug.Log($"{typeof(T)} initialized.");
+            isInitialized = true;
+            Debug.Log($"{typeof(T)} initialized.");
+        }
     }
 }

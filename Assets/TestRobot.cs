@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Sirenix.OdinInspector;
+using Lapis.Utilities;
 
 public class TestRobot : MonoBehaviour
 {
@@ -18,33 +18,28 @@ public class TestRobot : MonoBehaviour
 
     }
 
-    [Button(Name = "測試音效")]
     public void PlaySoundEffect()
     {
         AudioManager.Instance.PlaySFX(ESoundEffectType.Success);
     }
 
-    [Button]
     public void CameraFadeIn(float time = 1f)
     {
-        CameraManager.Instance.StartFadeIn(time);
+        CameraEffectController.Instance.StartFadeIn(time);
     }
 
-    [Button]
     public void SetFadeInColor(Color color)
     {
-        CameraManager.Instance.SetFadeInColor(color);        
+        CameraEffectController.Instance.SetFadeInColor(color);        
     }
 
-    [Button]
     public void SetFadeOutColor(Color color)
     {
-        CameraManager.Instance.SetFadeOutColor(color);
+        CameraEffectController.Instance.SetFadeOutColor(color);
     }
 
-    [Button]
     public void CameraFadeOut(float time = 1f)
     {
-        CameraManager.Instance.StartFadeOut(time);
+        CameraEffectController.Instance.StartFadeOut(time);
     }
 }

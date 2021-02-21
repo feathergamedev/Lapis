@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Lapis.Singleton;
+using Lapis.Utilities;
 
 public class CameraEffectController : MonoSingleton<CameraEffectController>
 {

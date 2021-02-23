@@ -6,6 +6,18 @@ Last Update : 2021/02/24
 
 ## Summary
 
-Modules   : Common feature for Game-Dev, e.g, <b>Camera Effect</b>, <b>Audio Management</b>, <b>Character Controller</b>. 
+Modules   : Common feature and sub-system in all games
 
-Utilities : Useful stuff like <b>Extension Methods</b>, <b>Design Pattern Implementations</b>.
+●<b>Camera Effect</b>
+
+●<b>Audio Management</b>
+
+●<b>Character Controller</b>. 
+
+Utilities : Useful shortcuts and optimization solutions for programming
+
+●<b>Extension Methods</b>
+
+●<b>Design Pattern Implementations</b>
+
+●<b>Object Pool</b>

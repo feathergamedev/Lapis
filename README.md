@@ -2,8 +2,6 @@
 
 Author : Feather Chung([@FeatherLv1](https://twitter.com/FeatherLV1]))
 
-Last Update : 2021/02/24
-
 ## Summary
 
 ### Modules   : Common features and sub-systems in any game
